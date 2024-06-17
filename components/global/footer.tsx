@@ -47,8 +47,8 @@ export default function Footer() {
         <CardFooter className="justify-between px-0">
           <span>© 2024 MTS. Tous droits reservés.</span>
           <div className="flex items-center gap-2">
-            {socialIcons.map((social) => (
-              <Button variant="flat" color="primary" isIconOnly>
+            {socialIcons.map((social, index) => (
+              <Button key={index} variant="flat" color="primary" isIconOnly>
                 <Link href={social.href}>{social.icon}</Link>
               </Button>
             ))}

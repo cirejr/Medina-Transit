@@ -56,7 +56,7 @@ export default function CtaForm() {
               {/* Title */}
               <div className="mt-4 md:mb-12 max-w-2xl">
                 <h1 className="mb-4 scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl">
-                  MTS : Votre Partenaire Logistique pour l'Avenir
+                  MTS : Votre Partenaire Logistique pour l&apos;Avenir
                 </h1>
                 <p className="text-xl text-muted-foreground">
                   Découvrez des solutions de transport et de logistique de

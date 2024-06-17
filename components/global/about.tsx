@@ -41,10 +41,10 @@ export default function About() {
               Chez Medina Transit Services, nous nous engageons à fournir des
               solutions de transport et de logistique fiables et efficaces pour
               répondre aux besoins variés de nos clients. Fondée en 2015, notre
-              entreprise s'est rapidement développée grâce à notre dévouement à
-              la qualité du service et à la satisfaction de la clientèle. Nous
-              vous accompagnons dans la gestion optimale de vos opérations
-              logistiques.
+              entreprise s&apos;est rapidement développée grâce à notre
+              dévouement à la qualité du service et à la satisfaction de la
+              clientèle. Nous vous accompagnons dans la gestion optimale de vos
+              opérations logistiques.
             </p>
           </div>
         </div>

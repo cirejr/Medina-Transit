@@ -416,8 +416,8 @@ export function ActivityArea() {
             Ou vous voulez
           </Chip>
           <p className="text-center text-base md:text-lg font-normal text-neutral-700 dark:text-neutral-200 max-w-md mt-2 mx-auto">
-            Le domaine d'activités de MTS ne se limite pas qu'au Sénégal. Nous
-            exerçons ou vous voulez.
+            Le domaine d&apos;activités de MTS ne se limite pas qu&apos;au
+            Sénégal. Nous exerçons ou vous voulez.
           </p>
         </motion.div>
         <div className="absolute min-w-full md:-bottom-20 h-80 md:h-full z-10">
