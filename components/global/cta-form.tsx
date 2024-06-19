@@ -51,6 +51,8 @@ export default function CtaForm() {
 
     if (res.status == 200) {
       toast.success('demande envoyé')
+    } else if (res.error) {
+      toast.error('Une erreur est survenue lors de l&apos;envoie' || res.error)
     }
 
     setIsLoading(false)

@@ -6,7 +6,6 @@ import { Resend } from 'resend'
 const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function sendEmail(form: FormData) {
-  console.log(form)
   const rawFormData = {
     firstName: form.get('firstName') as string,
     lastName: form.get('lastName') as string,
@@ -27,7 +26,7 @@ export async function sendEmail(form: FormData) {
   })
 
   if (error) {
-    console.error(error)
+    return { status: 500, error }
   }
 
   return { status: 200, data }

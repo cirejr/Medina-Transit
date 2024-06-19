@@ -20,10 +20,10 @@ export default function Welcome({
   return (
     <div>
       <h1>Demande Du Client!</h1>
-      <p>First Name: {firstName}</p>
-      <p>Last Name: {lastName}</p>
+      <p>Prénom: {firstName}</p>
+      <p>Nom: {lastName}</p>
       <p>Email: {email}</p>
-      <p>Phone: {phone}</p>
+      <p>Téléphone: {phone}</p>
       <p>Service Demandé: {service}</p>
       <p>Description de la demande: {description}</p>
     </div>
