@@ -35,7 +35,7 @@ const CtaSection = () => {
               <Button
                 variant="flat"
                 color="secondary"
-                className="h-12 px-5 "
+                className="h-12 px-5 scroll-smooth"
                 as={Link}
                 href="#cta-form-section"
               >

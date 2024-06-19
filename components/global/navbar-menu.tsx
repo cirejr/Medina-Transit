@@ -14,7 +14,7 @@ import Image from 'next/image'
 import { siteLinks } from '@/configs/site'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import WhatsappIcon from './whatsapp-icon'
+import WhatsappIcon from '../icons/whatsapp-icon'
 
 export default function NavbarMenu() {
   const pathname = usePathname()
@@ -40,11 +40,13 @@ export default function NavbarMenu() {
       <NavbarContent justify="end">
         <NavbarItem>
           <Button
-            as={Link}
+            as="a"
             color="success"
-            href="https://wa.me/778427300?text=Bonjour, je viens de votre site. Je voudrais en savoir plus sur vos services"
+            href="https://wa.me/778427300?text=Bonjour, je viens de visiter votre site. Je voudrais en savoir plus sur vos services"
             variant="flat"
             startContent={<WhatsappIcon />}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             WhatsApp
           </Button>

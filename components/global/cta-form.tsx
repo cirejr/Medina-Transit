@@ -12,6 +12,7 @@ import { sendEmail } from '@/lib/actions'
 import { useFormStatus } from 'react-dom'
 import { Icons } from '../ui/icons'
 import { toast } from 'sonner'
+import SendIcon from '../icons/send-icon'
 
 const services = [
   { key: 'transport_marchandises', label: 'Transport de Marchandises' },
@@ -71,24 +72,28 @@ export default function CtaForm() {
               {/* Grid */}
               <div className="grid grid-cols-2 gap-4">
                 <Input
+                  isRequired
                   name="firstName"
                   aria-label="Prenom"
                   label="Prénom"
                   variant="bordered"
                 />
                 <Input
+                  isRequired
                   name="lastName"
                   aria-label="Nom"
                   label="Nom"
                   variant="bordered"
                 />
                 <Input
+                  isRequired
                   name="email"
                   aria-label="Email"
                   label="Email"
                   variant="bordered"
                 />
                 <Input
+                  isRequired
                   name="phone"
                   aria-label="phone"
                   label="Téléphone"
@@ -96,7 +101,6 @@ export default function CtaForm() {
                   type="number"
                 />
                 <Select
-                  description="service"
                   name="service"
                   label="Choisir un service"
                   className="col-span-2"
@@ -107,8 +111,6 @@ export default function CtaForm() {
                   ))}
                 </Select>
                 <Textarea
-                  isRequired
-                  description="description"
                   name="description"
                   variant="bordered"
                   className="col-span-2"
@@ -117,11 +119,13 @@ export default function CtaForm() {
                 <Button
                   variant="flat"
                   color="primary"
-                  className="mt-3 col-span-2"
-                  type="submit"
+                  size="lg"
+                  className="mt-3 col-span-2 h-12"
                   disabled={isLoading}
+                  isLoading={isLoading}
+                  endContent={<SendIcon />}
+                  type="submit"
                 >
-                  {isLoading && <Icons.spinner className="animate-spin" />}
                   {isLoading ? 'En cours...' : 'Envoyer'}
                 </Button>
               </div>

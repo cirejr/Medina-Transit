@@ -73,6 +73,10 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
   /* 
   .bg-primary-color {
     @apply bg-[#156C96];

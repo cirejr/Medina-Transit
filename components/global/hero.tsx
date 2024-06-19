@@ -37,7 +37,7 @@ export default function Hero() {
               <Button
                 variant="shadow"
                 color="secondary"
-                className="text-white h-12"
+                className="text-white h-12 scroll-smooth"
                 as={Link}
                 href="#cta-form-section"
               >
