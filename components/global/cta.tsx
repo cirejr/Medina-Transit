@@ -1,4 +1,5 @@
 import { Button } from '@nextui-org/react'
+import Link from 'next/link'
 
 const CtaSection = () => {
   return (
@@ -31,7 +32,13 @@ const CtaSection = () => {
               efficaces.
             </p>
             <div className="mx-auto max-w-md sm:max-w-xl flex justify-center">
-              <Button variant="flat" color="secondary" className="h-12 px-5 ">
+              <Button
+                variant="flat"
+                color="secondary"
+                className="h-12 px-5 "
+                as={Link}
+                href="#cta-form-section"
+              >
                 Nous contacter
               </Button>
             </div>

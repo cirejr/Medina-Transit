@@ -25,13 +25,21 @@ export default function Hero() {
               services fiables, efficaces et adaptés à vos besoins.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 w-full">
-              <Button variant="shadow" color="primary" className="h-12">
+              <Button
+                variant="shadow"
+                color="primary"
+                className="h-12 scroll-smooth"
+                as={Link}
+                href="#cta-form-section"
+              >
                 Commencer
               </Button>
               <Button
                 variant="shadow"
                 color="secondary"
                 className="text-white h-12"
+                as={Link}
+                href="#cta-form-section"
               >
                 Prendre contact
               </Button>

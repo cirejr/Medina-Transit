@@ -28,12 +28,12 @@ export default function Footer() {
             {usefullLinks.map((link, index) => (
               <Listbox key={index}>
                 <ListboxSection title={link.headTitle}>
-                  {link.submenu.map((submenu) => (
+                  {link.submenu.map((submenu, idx) => (
                     <ListboxItem
                       variant="faded"
                       color="primary"
                       className="hover:rounded-sm "
-                      key={submenu.href}
+                      key={idx}
                       href={submenu.href}
                     >
                       {submenu.title}
