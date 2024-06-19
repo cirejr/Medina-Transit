@@ -47,6 +47,9 @@ importers:
       next-nprogress-bar:
         specifier: ^2.3.12
         version: 2.3.12
+      next-themes:
+        specifier: ^0.2.1
+        version: 0.2.1(next@14.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
         specifier: ^18
         version: 18.3.1
@@ -2605,6 +2608,13 @@ packages:
 
   next-nprogress-bar@2.3.12:
     resolution: {integrity: sha512-BCsmNmssPY4QfYKux7cGYm/JmsM/n9TGMJJDyYPt7ckWyK8l43hMgi7g9d7u/IxCaEAx3pbzfg7Ity0zdlDnGA==}
+
+  next-themes@0.2.1:
+    resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
+    peerDependencies:
+      next: '*'
+      react: '*'
+      react-dom: '*'
 
   next@14.2.4:
     resolution: {integrity: sha512-R8/V7vugY+822rsQGQCjoLhMuC9oFj9SOi4Cl4b2wjDrseD0LRZ10W7R6Czo4w9ZznVSshKjuIomsRjvm9EKJQ==}
@@ -6936,6 +6946,12 @@ snapshots:
   next-nprogress-bar@2.3.12:
     dependencies:
       nprogress: 0.2.0
+
+  next-themes@0.2.1(next@14.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+    dependencies:
+      next: 14.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react: 18.3.1
+      react-dom: 18.3.1(react@18.3.1)
 
   next@14.2.4(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
