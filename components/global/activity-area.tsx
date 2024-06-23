@@ -396,7 +396,7 @@ export function ActivityArea() {
   ]
 
   return (
-    <div className="flex flex-row items-center justify-center md:py-20 h-[400px] md:h-auto dark:bg-black relative w-full">
+    <div className="flex flex-row items-center justify-center md:py-7 h-[400px] md:h-auto dark:bg-black relative w-full">
       <div className="max-w-7xl mx-auto w-full relative overflow-hidden h-full md:h-[40rem] px-4">
         <motion.div
           initial={{
