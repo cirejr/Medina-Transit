@@ -61,10 +61,9 @@ export default function CtaForm() {
     //@ts-ignore
     <form onSubmit={handleSubmit}>
       <div className="lg:max-w-lg lg:mx-auto lg:me-0 ms-auto">
-        {/* Card */}
         <Card>
           <CardHeader className="text-center">
-            <h2 className="text-2xl font-semibold leading-none tracking-tight">
+            <h2 className="text-2xl font-semibold leading-none tracking-tight bg-clip-text bg-gradient-to-l from-blue-600 to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
               Commençons dès maintenant
             </h2>
             <CardDescription>Parlez nous de votre besoin</CardDescription>
@@ -131,11 +130,9 @@ export default function CtaForm() {
                   {isLoading ? 'En cours...' : 'Envoyer'}
                 </Button>
               </div>
-              {/* Grid End */}
             </div>
           </CardContent>
         </Card>
-        {/* End Card */}
       </div>
     </form>
   )

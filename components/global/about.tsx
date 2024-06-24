@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function About() {
   return (
     <>
-      <section className="bg-gray-100 dark:bg-gray-900 py-10 md:py-36 lg:py-40 h-auto md:h-[100dvh] min-h-max flex items-center relative">
+      <section className="bg-gray-100 dark:bg-gray-900 py-10 md:py-14 lg:py-20 h-auto min-h-fit flex items-center relative">
         <div
           className="absolute top-0 left-0 -translate-x-[54%] -translate-y-[70%] w-2/5 rounded-full aspect-square bg-secondary/70
   backdrop-filter blur-3xl opacity-50"
