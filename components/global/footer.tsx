@@ -18,7 +18,7 @@ const socialIcons = [
 
 export default function Footer() {
   return (
-    <main className="w-full p-6 dark bg-slate-950 ">
+    <footer className="w-full p-6 dark bg-slate-950 bottom-0 left-0 right-0 ">
       <Card className="dark rounded-none border-none mt-10">
         <CardContent className="flex flex-col gap-6 md:gap-1 md:flex-row justify-between">
           <div className="mt-6 flex items-center justify-center md:items-start md:justify-start">
@@ -55,6 +55,6 @@ export default function Footer() {
           </div>
         </CardFooter>
       </Card>
-    </main>
+    </footer>
   )
 }

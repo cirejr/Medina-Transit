@@ -1,4 +1,4 @@
-import About from '@/components/global/about'
+import About from '@/components/global/about/about'
 import { ActivityArea } from '@/components/global/activity-area'
 import CtaSection from '@/components/global/cta'
 import CtaFormSection from '@/components/global/cta-form-section'
