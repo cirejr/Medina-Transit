@@ -14,9 +14,9 @@ function Vision() {
             <div>
               <h2 className="text-3xl font-bold lg:text-4xl">Notre Vision</h2>
               <p className="mt-3 text-muted-foreground">
-                La vision de MTS est d'être le leader de solutions novatrices et
-                durables dans le secteur du transport, en promouvant
-                l&apos;efficacité logistique.
+                La vision de MTS est d&apos;être le leader de solutions
+                novatrices et durables dans le secteur du transport, en
+                promouvant l&apos;efficacité logistique.
               </p>
             </div>
             <div className="space-y-6 lg:space-y-10">
@@ -117,9 +117,9 @@ function Mission() {
                     Optimisation d&apos;approvisionnement
                   </h3>
                   <p className="mt-1 text-muted-foreground">
-                    Optimiser la chaîne d'approvisionnement de nos clients grâce
-                    à une expertise locale, des technologies de pointe et un
-                    engagement inébranlable envers la qualité.
+                    Optimiser la chaîne d&apos;approvisionnement de nos clients
+                    grâce à une expertise locale, des technologies de pointe et
+                    un engagement inébranlable envers la qualité.
                   </p>
                 </div>
               </div>

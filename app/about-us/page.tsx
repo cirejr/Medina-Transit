@@ -1,3 +1,4 @@
+import CtaAboutUs from '@/components/global/cta-about-us'
 import Intro from '@/components/global/introduction'
 import { SpotlightSection } from '@/components/global/spotlight-section'
 import VisionMissionTabs from '@/components/global/vision-mission'
@@ -13,6 +14,7 @@ export default function Page() {
       <Intro />
       <VisionMissionTabs />
       <WhyUs />
+      <CtaAboutUs />
     </main>
   )
 }
