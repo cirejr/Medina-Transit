@@ -64,16 +64,16 @@ const serviceContent = [
       <>
         <p>
           MTS propose des solutions logistiques complètes pour aider ses clients
-          à gérer efficacement leurs opérations d'entreposage, de gestion des
-          stocks, de conditionnement et de distribution. Grâce à nos
-          installations d'entreposage modernes et à nos systèmes de gestion des
-          stocks avancés, nous garantissons une gestion optimale des flux de
+          à gérer efficacement leurs opérations d&apos;entreposage, de gestion
+          des stocks, de conditionnement et de distribution. Grâce à nos
+          installations d&apos;entreposage modernes et à nos systèmes de gestion
+          des stocks avancés, nous garantissons une gestion optimale des flux de
           marchandises.
         </p>
         <p>
           Notre expertise en logistique permet à nos clients de rationaliser
-          leurs opérations, de réduire les coûts et d'améliorer leur efficacité
-          globale.
+          leurs opérations, de réduire les coûts et d&apos;améliorer leur
+          efficacité globale.
         </p>
       </>
     ),
@@ -88,10 +88,10 @@ const serviceContent = [
         <p>
           MTS facilite les formalités douanières pour ses clients, en veillant à
           ce que les marchandises traversent les frontières en toute légalité et
-          en toute fluidité. Notre entreprise dispose d'une équipe d'experts en
-          douane qui sont bien versés dans les règlements et les procédures
-          douanières, garantissant ainsi une conformité totale avec les
-          exigences réglementaires.
+          en toute fluidité. Notre entreprise dispose d&apos;une équipe
+          d&apos;experts en douane qui sont bien versés dans les règlements et
+          les procédures douanières, garantissant ainsi une conformité totale
+          avec les exigences réglementaires.
         </p>
         <p>
           Nos services douaniers permettent à nos clients de naviguer facilement
