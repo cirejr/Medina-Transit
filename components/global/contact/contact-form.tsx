@@ -37,68 +37,70 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="w-full flex justify-center bg-white py-14 backdrop-blur-md">
-      {/* //@ts-ignore */}
-      <form ref={formRef} onSubmit={handleSubmit} className="mb-4 shadow-2xl">
-        <div className="lg:max-w-lg lg:mx-auto ms-auto">
-          <Card>
-            <CardHeader className="text-center">
-              <CardDescription>Laissez nous un message</CardDescription>
-              <CardTitle className="text-4xl font-semibold  bg-clip-text bg-gradient-to-l from-primary to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
-                Dites-nous en plus sur votre projet
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="mt-5">
-                {/* Grid */}
-                <div className="space-y-4">
-                  <Input
-                    isRequired
-                    name="firstName"
-                    aria-label="Prenom"
-                    label="Prénom"
-                    variant="bordered"
-                  />
-                  <Input
-                    isRequired
-                    name="lastName"
-                    aria-label="Nom"
-                    label="Nom"
-                    variant="bordered"
-                  />
-                  <Input
-                    isRequired
-                    name="phone"
-                    aria-label="phone"
-                    label="Téléphone"
-                    variant="bordered"
-                    type="number"
-                  />
-                  <Textarea
-                    name="description"
-                    placeholder="Dites nous de quoi vous avez besoin"
-                    variant="bordered"
-                    className="col-span-2"
-                    label="Objet"
-                  />
-                  <Button
-                    variant="flat"
-                    color="secondary"
-                    size="lg"
-                    className="mt-3 col-span-2 h-12 w-full"
-                    disabled={isLoading}
-                    isLoading={isLoading}
-                    endContent={<SendIcon fill="#E4831A" />}
-                    type="submit"
-                  >
-                    {isLoading ? 'En cours...' : 'Envoyer'}
-                  </Button>
+    <section className="w-full flex justify-center bg-white bg-[url('/images/sea-port-bg.jpg')] bg-no-repeat bg-cover bg-opacity-25 ">
+      <div className="w-full h-full bg-black px-[2rem] py-14 bg-opacity-35 backdrop-blur-md">
+        {/* //@ts-ignore */}
+        <form ref={formRef} onSubmit={handleSubmit} className="">
+          <div className="lg:max-w-lg lg:mx-auto ms-auto">
+            <Card>
+              <CardHeader className="text-center">
+                <CardDescription>Laissez nous un message</CardDescription>
+                <CardTitle className="text-4xl font-semibold  bg-clip-text bg-gradient-to-l from-primary to-violet-500 text-transparent dark:from-blue-400 dark:to-violet-400">
+                  Dites-nous en plus sur votre projet
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="mt-5">
+                  {/* Grid */}
+                  <div className="space-y-4">
+                    <Input
+                      isRequired
+                      name="firstName"
+                      aria-label="Prenom"
+                      label="Prénom"
+                      variant="bordered"
+                    />
+                    <Input
+                      isRequired
+                      name="lastName"
+                      aria-label="Nom"
+                      label="Nom"
+                      variant="bordered"
+                    />
+                    <Input
+                      isRequired
+                      name="phone"
+                      aria-label="phone"
+                      label="Téléphone"
+                      variant="bordered"
+                      type="number"
+                    />
+                    <Textarea
+                      name="description"
+                      placeholder="Dites nous de quoi vous avez besoin"
+                      variant="bordered"
+                      className="col-span-2"
+                      label="Objet"
+                    />
+                    <Button
+                      variant="flat"
+                      color="secondary"
+                      size="lg"
+                      className="mt-3 col-span-2 h-12 w-full"
+                      disabled={isLoading}
+                      isLoading={isLoading}
+                      endContent={<SendIcon fill="#E4831A" />}
+                      type="submit"
+                    >
+                      {isLoading ? 'En cours...' : 'Envoyer'}
+                    </Button>
+                  </div>
                 </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </form>
+              </CardContent>
+            </Card>
+          </div>
+        </form>
+      </div>
     </section>
   )
 }
