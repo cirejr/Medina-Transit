@@ -40,7 +40,7 @@ export default function ContactForm() {
     <section className="w-full flex justify-center bg-white bg-[url('/images/sea-port-bg.jpg')] bg-no-repeat bg-cover bg-opacity-25 ">
       <div className="w-full h-full bg-black px-[2rem] py-14 bg-opacity-35 backdrop-blur-md">
         {/* //@ts-ignore */}
-        <form ref={formRef} onSubmit={handleSubmit} className="">
+        <form ref={formRef} onSubmit={handleSubmit}>
           <div className="lg:max-w-lg lg:mx-auto ms-auto">
             <Card>
               <CardHeader className="text-center">
