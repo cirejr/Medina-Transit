@@ -10,39 +10,20 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const socialIcons = [
-  { icon: <Icons.gitHub />, href: '#' },
   { icon: <Icons.twitter />, href: '#' },
-  { icon: <Icons.ig />, href: '#' },
-  { icon: <Icons.in />, href: '#' },
+  { icon: <Icons.ig />, href: 'https://www.instagram.com/medina_transit/' },
+  {
+    icon: <Icons.in />,
+    href: 'https://sn.linkedin.com/company/medina-transit-service-suarl',
+  },
 ]
 
 export default function Footer() {
   return (
-    <main className="w-full p-6 dark bg-slate-950 ">
-      <Card className="dark rounded-none border-none mt-10">
-        <CardContent className="flex flex-col gap-6 md:gap-1 md:flex-row justify-between">
-          <div className="mt-6 flex items-center justify-center md:items-start md:justify-start">
-            <Image alt="Medina Transit" src={logo} width={150} height={150} />
-          </div>
-          <div className="flex w-full md:w-2/3 justify-center gap-4">
-            {usefullLinks.map((link, index) => (
-              <Listbox key={index}>
-                <ListboxSection title={link.headTitle}>
-                  {link.submenu.map((submenu) => (
-                    <ListboxItem
-                      variant="faded"
-                      color="primary"
-                      className="hover:rounded-sm "
-                      key={submenu.href}
-                      href={submenu.href}
-                    >
-                      {submenu.title}
-                    </ListboxItem>
-                  ))}
-                </ListboxSection>
-              </Listbox>
-            ))}
-          </div>
+    <footer className="w-full px-6 dark bg-slate-950 bottom-0 left-0 right-0 ">
+      <Card className="dark rounded-none border-none">
+        <CardContent className="flex justify-center">
+          <Image alt="Medina Transit" src={logo} width={400} height={400} />
         </CardContent>
         <CardFooter className="justify-between px-0">
           <span>© 2024 MTS. Tous droits reservés.</span>
@@ -55,6 +36,6 @@ export default function Footer() {
           </div>
         </CardFooter>
       </Card>
-    </main>
+    </footer>
   )
 }

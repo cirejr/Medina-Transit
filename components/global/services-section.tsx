@@ -141,7 +141,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-20">
+    <section className="py-7">
       <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5 flex flex-col items-start gap-10 xl:gap-14">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <Chip variant="dot" color="primary">

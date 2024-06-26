@@ -2,13 +2,10 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { Inter as FontSans } from 'next/font/google'
 import { cn } from '@/lib/utils'
-import NavbarMenu from '@/components/global/navbar-menu'
 import { Providers } from '@/providers/providers'
-import {
-  GridBackground,
-  GridSmallBackground,
-} from '@/components/global/grid-background'
+import { GridSmallBackground } from '@/components/global/grid-background'
 import Footer from '@/components/global/footer'
+import GlobalNavbar from '@/components/global/navbar-menu'
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -34,7 +31,7 @@ export default function RootLayout({
         )}
       >
         <Providers>
-          <NavbarMenu />
+          <GlobalNavbar />
           <GridSmallBackground>{children}</GridSmallBackground>
           <Footer />
         </Providers>
