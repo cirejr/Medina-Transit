@@ -8,32 +8,38 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import { sendEmail } from '@/lib/actions'
+import { sendContactForm } from '@/lib/actions'
 import { toast } from 'sonner'
 import SendIcon from '../../icons/send-icon'
 
 export default function ContactForm() {
   const [isLoading, setIsLoading] = React.useState(false)
+  const formRef = React.useRef<HTMLFormElement>(null)
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     setIsLoading(true)
 
     const formData = new FormData(event.currentTarget)
-    const res = await sendEmail(formData)
+    const res = await sendContactForm(formData)
 
     if (res.status == 200) {
       toast.success('demande envoyé')
+
+      if (formRef.current) {
+        formRef.current.reset()
+      }
     } else if (res.error) {
       toast.error('Une erreur est survenue lors de l&apos;envoie' || res.error)
     }
 
     setIsLoading(false)
   }
+
   return (
     <section className="w-full flex justify-center bg-white py-14 backdrop-blur-md">
       {/* //@ts-ignore */}
-      <form onSubmit={handleSubmit} className="mb-4 shadow-2xl">
+      <form ref={formRef} onSubmit={handleSubmit} className="mb-4 shadow-2xl">
         <div className="lg:max-w-lg lg:mx-auto ms-auto">
           <Card>
             <CardHeader className="text-center">

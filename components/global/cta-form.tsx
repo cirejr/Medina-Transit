@@ -41,6 +41,7 @@ const services = [
 
 export default function CtaForm() {
   const [isLoading, setIsLoading] = React.useState(false)
+  const formRef = React.useRef<HTMLFormElement>(null)
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -51,8 +52,12 @@ export default function CtaForm() {
 
     if (res.status == 200) {
       toast.success('demande envoyé')
+
+      if (formRef.current) {
+        formRef.current.reset()
+      }
     } else if (res.error) {
-      toast.error('Une erreur est survenue lors de l&apos;envoie' || res.error)
+      toast.error("Une erreur est survenue lors de l'envoie" || res.error)
     }
 
     setIsLoading(false)

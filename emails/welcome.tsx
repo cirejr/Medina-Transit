@@ -3,9 +3,9 @@ import React from 'react'
 type emailProps = {
   firstName: string
   lastName: string
-  email: string
+  email?: string
   phone: number
-  service: string
+  service?: string
   description: string
 }
 
@@ -26,6 +26,23 @@ export default function Welcome({
       <p>Téléphone: {phone}</p>
       <p>Service Demandé: {service}</p>
       <p>Description de la demande: {description}</p>
+    </div>
+  )
+}
+
+export function ContactFormEmail({
+  firstName,
+  lastName,
+  phone,
+  description,
+}: emailProps) {
+  return (
+    <div>
+      <h1>Demande Du Client!</h1>
+      <p>Prénom: {firstName}</p>
+      <p>Nom: {lastName}</p>
+      <p>Téléphone: {phone}</p>
+      <p>Message: {description}</p>
     </div>
   )
 }

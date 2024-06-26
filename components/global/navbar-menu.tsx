@@ -7,6 +7,9 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
+  NavbarMenu,
+  NavbarMenuItem,
+  NavbarMenuToggle,
 } from '@nextui-org/react'
 
 import logo from '@/public/images/logo-nobg.png'
@@ -16,10 +19,16 @@ import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import WhatsappIcon from '../icons/whatsapp-icon'
 
-export default function NavbarMenu() {
+export default function GlobalNavbar() {
   const pathname = usePathname()
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false)
   return (
-    <Navbar position="sticky" isBlurred={true} className="h-32">
+    <Navbar
+      onMenuOpenChange={setIsMenuOpen}
+      position="sticky"
+      isBlurred={true}
+      className="h-32"
+    >
       <NavbarBrand>
         <Image alt="Medina Transit" src={logo} width={150} height={150} />
       </NavbarBrand>
@@ -47,11 +56,38 @@ export default function NavbarMenu() {
             startContent={<WhatsappIcon />}
             target="_blank"
             rel="noopener noreferrer"
+            className="hidden sm:flex"
           >
             WhatsApp
           </Button>
+          <Button
+            as="a"
+            color="success"
+            href="https://wa.me/776836700?text=Bonjour, je viens de visiter votre site. Je voudrais en savoir plus sur vos services"
+            variant="flat"
+            isIconOnly
+            target="_blank"
+            rel="noopener noreferrer"
+            className="sm:hidden"
+            radius="full"
+          >
+            <WhatsappIcon />
+          </Button>
         </NavbarItem>
+        <NavbarMenuToggle
+          aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
+          className="sm:hidden"
+        />
       </NavbarContent>
+      <NavbarMenu className=" justify-center items-center">
+        {siteLinks.map((item, index) => (
+          <NavbarMenuItem key={index}>
+            <Link className="w-full" href={item.link}>
+              {item.label}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
     </Navbar>
   )
 }

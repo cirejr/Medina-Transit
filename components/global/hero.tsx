@@ -57,7 +57,7 @@ export default function Hero() {
             </div>
             <div className="absolute right-0 bottom-0 h-[calc(100%-50px)] w-4/5 rounded-3xl overflow-clip border-4 border-gray-200 dark:border-gray-800 z-10">
               <Image
-                src="https://img.freepik.com/photos-gratuite/jeune-homme-travaillant-dans-entrepot_23-2149128345.jpg?t=st=1718457398~exp=1718460998~hmac=b1b6b914b2de33fc4723f007e118006fa8ffdd026d94028201c31abd611ecb4a&w=740"
+                src="https://img.freepik.com/photos-gratuite/directeur-approvisionnement-stocks-afro-americain-faisant-portrait-inventaire-marchandises_482257-77647.jpg?t=st=1719404952~exp=1719408552~hmac=58b9bddc7cbeecb79ec6dbc3eba7759cca9fe2e4819461cb76d65c2bc394a471&w=1380"
                 alt="Logistique"
                 height={1300}
                 width={1300}

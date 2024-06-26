@@ -56,7 +56,7 @@ const serviceContent = [
     ),
     badge: 'Transport',
     image:
-      'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      'https://img.freepik.com/photos-gratuite/gros-plan-livreur-colis_23-2149095903.jpg?t=st=1719406850~exp=1719410450~hmac=b7ae275130aeeabc4ad00f297c228a4c853a136f0618ef1460e99c822b29cbbb&w=1380',
   },
   {
     title: 'Services de Logistique',
@@ -79,7 +79,7 @@ const serviceContent = [
     ),
     badge: 'Logistique',
     image:
-      'https://images.unsplash.com/photo-1553413077-190dd305871c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      'https://img.freepik.com/photos-gratuite/gerant-entrepot-appelle-bureau-logistique-demande-rapport-inventaire-equipe-travailleurs-entrepot-afro-americains-regarde-informations-stock-tablette-parle-au-telephone_482257-71397.jpg?t=st=1719406954~exp=1719410554~hmac=54ed1cfa164a40832a9f4079ee50f417280c367aff1ce06d7bda56fff4641e1b&w=1380',
   },
   {
     title: 'Services Douaniers',
@@ -102,6 +102,6 @@ const serviceContent = [
     ),
     badge: 'Douanes',
     image:
-      'https://images.unsplash.com/photo-1573030889348-c6b0f8b15e40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
+      'https://img.freepik.com/photos-gratuite/employes-entrepot-debout-au-comptoir-discutant-gestion-expeditions-deux-employes-bureau-poste-afro-americains-parlant-livraison-colis-caisse-dans-salle-stockage_482257-63893.jpg?t=st=1719407027~exp=1719410627~hmac=f97b6fb959339cbc70730c9bae7698a28a6760280bfee4a3f53d1971b124e592&w=1380',
   },
 ]
