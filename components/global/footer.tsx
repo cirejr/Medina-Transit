@@ -26,7 +26,7 @@ export default function Footer() {
           <Image
             alt="Medina Transit"
             src={logo}
-            className="w-[200px] h-[200px] md:w-[400px] md:h-[400px]"
+            className="w-[200px] h-[200px] md:w-[300px] md:h-[300px]"
           />
         </CardContent>
         <CardFooter className="justify-between px-0">
