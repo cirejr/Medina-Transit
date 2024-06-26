@@ -79,10 +79,10 @@ export default function MapsSection() {
           <div className="lg:col-span-4 mt-10 lg:mt-0">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15437.37148419744!2d-17.4457064!3d14.6931922!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1736a065f724d%3A0xf387c820c1db130!2sMedina%20Transit%20Services!5e0!3m2!1sfr!2ssn!4v1719273428824!5m2!1sfr!2ssn"
-              width="600"
-              height="450"
+              /* width="600"
+              height="450" */
               loading="lazy"
-              className="rounded-lg shadow-lg border-2 border-gray-300"
+              className="rounded-lg shadow-lg border-2 border-gray-300 w-full h-[300px] sm:w-[600px] sm:h-[450px]"
             />
           </div>
           {/* End Col */}

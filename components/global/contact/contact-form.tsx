@@ -37,7 +37,7 @@ export default function ContactForm() {
   }
 
   return (
-    <section className="w-full flex justify-center bg-white py-14 backdrop-blur-md">
+    <section className="container w-full flex justify-center bg-white py-14 backdrop-blur-md">
       {/* //@ts-ignore */}
       <form ref={formRef} onSubmit={handleSubmit} className="mb-4 shadow-2xl">
         <div className="lg:max-w-lg lg:mx-auto ms-auto">
