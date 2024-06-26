@@ -24,6 +24,7 @@ export default function GlobalNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
   return (
     <Navbar
+      isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       position="sticky"
       isBlurred={true}
@@ -82,7 +83,11 @@ export default function GlobalNavbar() {
       <NavbarMenu className=" justify-center items-center">
         {siteLinks.map((item, index) => (
           <NavbarMenuItem key={index}>
-            <Link className="w-full" href={item.link}>
+            <Link
+              className="w-full"
+              href={item.link}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
               {item.label}
             </Link>
           </NavbarMenuItem>

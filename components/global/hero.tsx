@@ -24,7 +24,7 @@ export default function Hero() {
               de logistique de qualité supérieure au Sénégal. Qui rallie
               services fiables, efficaces et adaptés à vos besoins.
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 w-full">
+            <div className="flex items-center justify-center lg:justify-start gap-4 w-full">
               <Button
                 variant="shadow"
                 color="primary"

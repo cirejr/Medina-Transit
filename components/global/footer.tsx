@@ -10,12 +10,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const socialIcons = [
-  { icon: <Icons.twitter />, href: '#' },
-  { icon: <Icons.ig />, href: 'https://www.instagram.com/medina_transit/' },
   {
     icon: <Icons.in />,
     href: 'https://sn.linkedin.com/company/medina-transit-service-suarl',
   },
+  { icon: <Icons.ig />, href: 'https://www.instagram.com/medina_transit/' },
+  { icon: <Icons.twitter />, href: '#' },
 ]
 
 export default function Footer() {
@@ -23,7 +23,11 @@ export default function Footer() {
     <footer className="w-full px-6 dark bg-slate-950 bottom-0 left-0 right-0 ">
       <Card className="dark rounded-none border-none">
         <CardContent className="flex justify-center">
-          <Image alt="Medina Transit" src={logo} width={400} height={400} />
+          <Image
+            alt="Medina Transit"
+            src={logo}
+            className="w-[200px] h-[200px] md:w-[400px] md:h-[400px]"
+          />
         </CardContent>
         <CardFooter className="justify-between px-0">
           <span>© 2024 MTS. Tous droits reservés.</span>
