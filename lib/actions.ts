@@ -19,7 +19,7 @@ export async function sendEmail(form: FormData) {
     rawFormData
   const { data, error } = await resend.emails.send({
     from: 'MTS <onboarding@resend.dev>',
-    to: 'juniorcireba@gmail.com',
+    to: 'medinatransit01@gmail.com',
     reply_to: email as string,
     subject: 'Formulaire de contact',
     react: Welcome({ firstName, lastName, email, phone, service, description }),
@@ -43,7 +43,7 @@ export async function sendContactForm(form: FormData) {
   const { firstName, lastName, phone, description } = rawFormData
   const { data, error } = await resend.emails.send({
     from: 'MTS <onboarding@resend.dev>',
-    to: 'juniorcireba@gmail.com',
+    to: 'medinatransit01@gmail.com',
     subject: 'Formulaire de contact',
     react: ContactFormEmail({ firstName, lastName, phone, description }),
   })
