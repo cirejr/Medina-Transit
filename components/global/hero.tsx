@@ -30,9 +30,9 @@ export default function Hero() {
                 color="primary"
                 className="h-12 scroll-smooth"
                 as={Link}
-                href="#cta-form-section"
+                href="/about-us"
               >
-                Commencer
+                En savoir plus
               </Button>
               <Button
                 variant="shadow"
