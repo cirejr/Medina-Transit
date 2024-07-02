@@ -6,7 +6,7 @@ import { TracingBeam } from '../../ui/tracing-beam'
 
 export function ServicesTracingBeam() {
   return (
-    <TracingBeam className="px-6 pt-14">
+    <TracingBeam className="px-6 pt-14 scrollbar-hide">
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {serviceContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">

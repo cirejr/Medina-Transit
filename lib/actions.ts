@@ -18,14 +18,15 @@ export async function sendEmail(form: FormData) {
   const { firstName, lastName, email, phone, service, description } =
     rawFormData
   const { data, error } = await resend.emails.send({
-    from: 'MTS <onboarding@resend.dev>',
-    to: 'medinatransit01@gmail.com',
+    from: 'MTS <oncontactmts@resend.dev>',
+    to: 'juniorcireba@gmail.com',
     reply_to: email as string,
     subject: 'Formulaire de contact',
     react: Welcome({ firstName, lastName, email, phone, service, description }),
   })
 
   if (error) {
+    console.error(error)
     return { status: 500, error }
   }
 
@@ -43,7 +44,7 @@ export async function sendContactForm(form: FormData) {
   const { firstName, lastName, phone, description } = rawFormData
   const { data, error } = await resend.emails.send({
     from: 'MTS <onboarding@resend.dev>',
-    to: 'medinatransit01@gmail.com',
+    to: 'juniorcireba@gmail.com',
     subject: 'Formulaire de contact',
     react: ContactFormEmail({ firstName, lastName, phone, description }),
   })
